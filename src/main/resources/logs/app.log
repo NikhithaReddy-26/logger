@@ -1,0 +1,32 @@
+2023-05-29 10:49:24,055 TRACE org.springframework.core.io.support.SpringFactoriesLoader [main] Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2023-05-29 10:49:24,064 DEBUG org.springframework.web.servlet.DispatcherServlet [main] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-05-29 10:49:24,064 INFO org.springframework.web.servlet.DispatcherServlet [main] Completed initialization in 1359 ms
+2023-05-29 10:49:35,686 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] GET "/DTO-demo/demo_project/home", parameters={}, headers={masked} in DispatcherServlet 'dispatcher'
+2023-05-29 10:49:35,730 TRACE org.springframework.beans.factory.support.DefaultListableBeanFactory [http-nio-8080-exec-3] Returning cached instance of singleton bean 'appController'
+2023-05-29 10:49:35,738 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-3] Mapped to com.dtodemo.controllers.AppController#showHomePage()
+2023-05-29 10:49:35,993 TRACE org.springframework.web.method.HandlerMethod [http-nio-8080-exec-3] Arguments: []
+2023-05-29 10:49:35,993 TRACE com.dtodemo.controllers.AppController [http-nio-8080-exec-3] we are tracing
+2023-05-29 10:49:35,993 ERROR com.dtodemo.controllers.AppController [http-nio-8080-exec-3] logger is showing error
+2023-05-29 10:49:35,993 WARN com.dtodemo.controllers.AppController [http-nio-8080-exec-3] logger is warning
+2023-05-29 10:49:35,993 INFO com.dtodemo.controllers.AppController [http-nio-8080-exec-3] fetching info
+2023-05-29 10:49:36,099 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [http-nio-8080-exec-3] Applying default cacheSeconds=-1
+2023-05-29 10:49:36,115 TRACE org.springframework.beans.factory.support.DefaultListableBeanFactory [http-nio-8080-exec-3] Invoking afterPropertiesSet() on bean with name 'welcome-page'
+2023-05-29 10:49:36,115 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'welcome-page'; URL [/WEB-INF/view/welcome-page.jsp]] 
+2023-05-29 10:49:36,119 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8080-exec-3] View name 'welcome-page', model {}
+2023-05-29 10:49:36,119 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8080-exec-3] Forwarding to [/WEB-INF/view/welcome-page.jsp]
+2023-05-29 10:49:40,983 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Completed 200 OK, headers={}
+2023-05-29 10:49:44,500 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] GET "/DTO-demo/demo_project/process-homepage?number1=123123&number2=234", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcher'
+2023-05-29 10:49:44,500 TRACE org.springframework.beans.factory.support.DefaultListableBeanFactory [http-nio-8080-exec-4] Returning cached instance of singleton bean 'appController'
+2023-05-29 10:49:44,500 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-4] Mapped to com.dtodemo.controllers.AppController#showResultPage(NumberInfoDTO, Model)
+2023-05-29 10:49:44,856 TRACE org.springframework.beans.CachedIntrospectionResults [http-nio-8080-exec-4] Getting BeanInfo for class [com.dtodemo.dto.NumberInfoDTO]
+2023-05-29 10:49:45,200 TRACE org.springframework.beans.CachedIntrospectionResults [http-nio-8080-exec-4] Caching PropertyDescriptors for class [com.dtodemo.dto.NumberInfoDTO]
+2023-05-29 10:49:45,200 TRACE org.springframework.beans.CachedIntrospectionResults [http-nio-8080-exec-4] Found bean property 'class' of type [java.lang.Class]
+2023-05-29 10:49:45,224 TRACE org.springframework.beans.CachedIntrospectionResults [http-nio-8080-exec-4] Found bean property 'number1' of type [java.lang.String]
+2023-05-29 10:49:45,230 TRACE org.springframework.beans.CachedIntrospectionResults [http-nio-8080-exec-4] Found bean property 'number2' of type [java.lang.String]
+2023-05-29 10:49:45,250 TRACE org.springframework.web.method.HandlerMethod [http-nio-8080-exec-4] Arguments: [NumberInfoDTO [number1=123123, number2=234], {numberInfoDTO=NumberInfoDTO [number1=123123, number2=234], org.springframework.validation.BindingResult.numberInfoDTO=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2023-05-29 10:49:45,252 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [http-nio-8080-exec-4] Applying default cacheSeconds=-1
+2023-05-29 10:49:45,259 TRACE org.springframework.beans.factory.support.DefaultListableBeanFactory [http-nio-8080-exec-4] Invoking afterPropertiesSet() on bean with name 'result-page'
+2023-05-29 10:49:45,260 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] Rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'result-page'; URL [/WEB-INF/view/result-page.jsp]] 
+2023-05-29 10:49:45,260 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8080-exec-4] View name 'result-page', model {numberInfoDTO=NumberInfoDTO [number1=123123, number2=234], org.springframework.validation.BindingResult.numberInfoDTO=org.springframework.validation.BeanPropertyBindingResult: 0 errors, numberInfo=NumberInfoDTO [number1=123123, number2=234], org.springframework.validation.BindingResult.numberInfo=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-05-29 10:49:45,260 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8080-exec-4] Forwarding to [/WEB-INF/view/result-page.jsp]
+2023-05-29 10:49:45,562 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] Completed 200 OK, headers={}
